@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import {
   StyleSheet,
-  Text,
-  TextInput,
-  Button,
   View,
   FlatList,
   Alert,
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
+
 import Header from "./components/header";
 import TodoItem from "./components/todoItem";
 import AddTodo from "./components/addTodo";
-import Sandbox from "./components/Sandbox";
 
 export default function App() {
   const [todos, setTodos] = useState([
